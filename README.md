@@ -21,7 +21,7 @@ pip install apiip
 The package needs to be configured with your account's API key, which is available in the [Apiip.net Dashboard](https://apiip.net/user/dashboard)
 
 ```python
-import apiip
+from apiip import apiip
 
 api_client = apiip('YOUR_API_KEY')
 
@@ -37,7 +37,7 @@ By default, the SSL/TLS is turned off, if you want to enable it just pass the op
 #### Example
 
 ```python
-import apiip
+from apiip import apiip
 
 api_client = apiip('YOUR_API_KEY', {'ssl': True})
 
@@ -51,7 +51,7 @@ print(info)
 Call getLocation method with config object
 
 ```python
-import apiip
+from apiip import apiip
 
 api_client = apiip('YOUR_API_KEY', {'ssl': True})
 
