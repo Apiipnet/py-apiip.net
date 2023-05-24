@@ -85,7 +85,7 @@ print(info)
   "countryNameNative": "United States",
   "regionCode":"NY"
   "regionName":"New York"
-  "cityGeoNameId":5128581,
+  "cityGeoNameId": 5128581,
   "city": "New York",
   "postalCode": "10001",
   "latitude": 40.8271,
@@ -94,7 +94,7 @@ print(info)
   "phoneCode": "1",
   "countryFlagEmoj": "🇺🇸",
   "countryFlagEmojUnicode": "U+1F1FA U+1F1F8",
-  "isEu": false,
+  "isEu": False,
   "borders": [
     "CAN",
     "MEX"
@@ -126,13 +126,13 @@ print(info)
     "utcOffset": -14400
   },
    "userAgent": {
-    "isMobile": false,
-    "isiPod": false,
-    "isTablet": false,
-    "isDesktop": true,
-    "isSmartTV": false,
-    "isRaspberry": false,
-    "isBot": false,
+    "isMobile": False,
+    "isiPod": False,
+    "isTablet": False,
+    "isDesktop": True,
+    "isSmartTV": False,
+    "isRaspberry": False,
+    "isBot": False,
     "browser": "Chrome",
     "browserVersion": "100.0.4896.127",
     "operatingSystem": "Windows 10.0",
@@ -144,12 +144,12 @@ print(info)
     "isp": "Charter Communications Inc"
   },
   "security": {
-    "isProxy": false,
-    "isBogon": false,
-    "isTorExitNode": false,
-    "isCloud": false,
-    "isHosting": false,
-    "isSpamhaus": false,
+    "isProxy": False,
+    "isBogon": False,
+    "isTorExitNode": False,
+    "isCloud": False,
+    "isHosting": False,
+    "isSpamhaus": False,
     "suggestion": "allow",
     "network": "67.250.176.0/20"
   }
