@@ -2,11 +2,11 @@
 
 Find geolocation data from IP addresses (e.g. city, country, lat/long) using the apiip.net API.
 
-apiip.net provides 5.000 free requests per month. For higher plans, check out the [website](https://apiip.net)
+apiip.net provides 1.000 free requests per month. For higher plans, check out the [website](https://apiip.net)
 
 ## Installation
 
-You need to get your API key from here: https://apiip.net/get-started and you'll get 5.000 free requests/month
+You need to get your API key from here: https://apiip.net/get-started and you'll get 1.000 free requests/month
 
 For more details, please visit: [API Documentation](https://apiip.net/documentation)
 
@@ -18,7 +18,7 @@ pip install apiip
 
 ## Usage
 
-The package needs to be configured with your account's API key, which is available in the [Apiip.net Dashboard](https://apiip.net/user/dashboard)
+The package needs to be configured with your account's API key, which is available in the [apiip.net Dashboard](https://apiip.net/user/dashboard)
 
 ```python
 from apiip import apiip
@@ -32,14 +32,14 @@ print(info)
 
 ## HTTPS Encryption
 
-By default, the SSL/TLS is turned off, if you want to enable it just pass the options parameter
+By default, the SSL/TLS is turned on, if you want to disable it just pass the options parameter
 
 #### Example
 
 ```python
 from apiip import apiip
 
-api_client = apiip('YOUR_API_KEY', {'ssl': True})
+api_client = apiip('YOUR_API_KEY', {'ssl': False})
 
 info = api_client.get_location()
 
@@ -53,7 +53,7 @@ Call getLocation method with config object
 ```python
 from apiip import apiip
 
-api_client = apiip('YOUR_API_KEY', {'ssl': True})
+api_client = apiip('YOUR_API_KEY')
 
 info = api_client.getLocation({
     'ip': "67.250.186.196", # '67.250.186.196, 188.79.34.191, 60.138.7.24' - for bulk request

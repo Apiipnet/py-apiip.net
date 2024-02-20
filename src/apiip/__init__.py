@@ -10,10 +10,10 @@ class apiip:
     def __init__(self, api_key, options={}):
         self.api_key = api_key
         self.options = options
-        if ('ssl' in options and options['ssl']):
-            self.api_url = self.ssl_url
-        else:
+        if ('ssl' in options and options['ssl'] == False):
             self.api_url = self.url
+        else:
+            self.api_url = self.ssl_url
 
     def get_location(self, query={}):
         query['accessKey'] = self.api_key

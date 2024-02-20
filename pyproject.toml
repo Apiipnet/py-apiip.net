@@ -4,9 +4,9 @@ build-backend = "hatchling.build"
 
 [project]
 name = "apiip"
-version = "1.0.3"
+version = "1.2.0"
 authors = [
-  { name="apiip", email="apiipnet.business@gmail.com" },
+  { name="apiip", email="contact@apiip.net" },
 ]
 description = "Official python package for apiip.net, it offers one of the leading IP to geolocation API, get the location of any IP with a world-class API serving city, region, country, lat/long data, etc."
 readme = "README.md"
